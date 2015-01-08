@@ -1,0 +1,203 @@
+name: SkyWars
+version: 1.0
+main: me.Juanco.skywars.SkyWars
+author: Juanco
+description: SkyWars Plugin!
+
+commands:
+    SkyWars:
+        usage: /<command>
+        description: Comando Basico!
+        aliases: [sw, swars]
+
+permissions:
+    sw.*:
+        default: op
+        description: Acceso Total!
+        children:
+            sw.admin.*: true
+            sw.asd: true
+    sw.asd:
+       default: op
+       description: asd!
+   
+    sw.admin.*:
+        default: op
+        description: Todos los comandos admin!
+        children:
+            sw.admin.create: true
+            sw.admin.delete: true
+            sw.admin.size: true
+            sw.admin.spawn: true
+            sw.admin.lobby: true
+            sw.admin.prespawn: true
+            sw.admin.waitroom: true
+            sw.admin.setspecspawn: true
+            sw.admin.loselevel: true
+            sw.admin.balance.*: true
+            sw.admin.kits: true
+            sw.admin.falldamage: true
+            sw.admin.start: true
+            sw.admin.stop: true
+            sw.admin.selector: true
+    
+    sw.admin.create:
+        default: op
+        description: Acceso al comando '/sw create'
+        
+    sw.admin.delete:
+        default: op
+        description: Acceso al comando '/sw delete'
+        
+    sw.admin.size:
+        default: op
+        description: Acceso al comando '/sw size'
+        
+    sw.admin.spawn:
+        default: op
+        description: Acceso al comando '/sw spawn'
+        
+    sw.admin.lobby:
+        default: op
+        description: Acceso al comando '/sw lobby'
+        
+    sw.admin.prespawn:
+        default: op
+        description: Acceso al comando '/sw prespawn'
+        
+    sw.admin.waitroom:
+        default: op
+        description: Acceso al comando '/sw waitroom'
+        
+    sw.admin.setspecspawn:
+        default: op
+        description: Acceso al comando '/sw setspecspawn'
+        
+    sw.admin.loselevel:
+        default: op
+        description: Acceso al comando '/sw loselevel'
+        
+    sw.admin.balance.*:
+        default: op
+        description: Acceso a todos los comandos '/sw admin balance'
+        children:
+            sw.admin.balance: true
+            sw.admin.balance.set: true
+            sw.admin.balance.add: true
+            sw.admin.balance.remove: true
+            sw.admin.balance.clear: true
+        
+    sw.admin.balance:
+        default: op
+        description: Acceso al comando '/sw admin balance'
+        
+    sw.admin.balance.set:
+        default: op
+        description: Acceso al comando '/sw admin balance set'
+        
+    sw.admin.balance.add:
+        default: op
+        description: Acceso al comando '/sw admin balance add'
+        
+    sw.admin.balance.remove:
+        default: op
+        description: Acceso al comando '/sw admin balance remove'
+        
+    sw.admin.balance.clear:
+        default: op
+        description: Acceso al comando '/sw admin balance clear'
+        
+    sw.admin.balance.create:
+        default: op
+        description: Acceso al comando '/sw admin balance create'
+                
+    sw.admin.kits.*:
+        default: op
+        description: Acceso a todos los comandos '/sw kits'
+        children:
+            sw.admin.kits: true
+            sw.admin.kits.create: true
+            sw.admin.kits.delete: true
+            sw.admin.kits.setinv: true
+            sw.admin.kits.addperm: true
+            sw.admin.kits.delperms: true
+            sw.admin.kits.lockable: true
+            sw.admin.kits.addcost: true
+            sw.admin.kits.costpu: true
+            sw.admin.kits.payxp: true
+            sw.admin.kits.payeco: true
+            sw.admin.kits.setoptions: true
+            sw.admin.kits.invsee: true
+            sw.admin.kits.list: true
+                
+    sw.admin.kits:
+        default: op
+        description: Acceso al comando '/sw kits'
+                
+    sw.admin.kits.create:
+        default: op
+        description: Acceso al comando '/sw kits create'
+                
+    sw.admin.kits.delete:
+        default: op
+        description: Acceso al comando '/sw kits delete'
+                
+    sw.admin.kits.setinv:
+        default: op
+        description: Acceso al comando '/sw kits setinv'
+                
+    sw.admin.kits.addperm:
+        default: op
+        description: Acceso al comando '/sw kits addperm'
+                
+    sw.admin.kits.delperms:
+        default: op
+        description: Acceso al comando '/sw kits delperms'
+                
+    sw.admin.kits.lockable:
+        default: op
+        description: Acceso al comando '/sw kits blockeable'
+                
+    sw.admin.kits.addcost:
+        default: op
+        description: Acceso al comando '/sw kits addcost'
+                
+    sw.admin.kits.costpu:
+        default: op
+        description: Acceso al comando '/sw kits costpu'
+                
+    sw.admin.kits.payxp:
+        default: op
+        description: Acceso al comando '/sw kits payxp'
+                
+    sw.admin.kits.payeco:
+        default: op
+        description: Acceso al comando '/sw kits payeco'
+                
+    sw.admin.kits.setoptions:
+        default: op
+        description: Acceso al comando '/sw kits setoptions'
+                
+    sw.admin.kits.invsee:
+        default: op
+        description: Acceso al comando '/sw kits invsee'
+                
+    sw.admin.kits.list:
+        default: op
+        description: Acceso al comando '/sw kits list'
+        
+    sw.admin.falldamage:
+        default: op
+        description: Acceso al comando '/sw falldamage'
+        
+    sw.admin.start:
+        default: op
+        description: Acceso al comando '/sw start'
+    
+    sw.admin.stop:
+        default: op
+        description: Acceso al comando '/sw stop'
+         
+    sw.admin.selector:
+        default: op
+        description: Acceso al comando '/sw selector'
