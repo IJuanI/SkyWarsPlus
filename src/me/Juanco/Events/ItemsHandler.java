@@ -57,7 +57,6 @@ public class ItemsHandler implements Listener {
 	public void onPlayerInteract(PlayerInteractEvent e) {
 		if (e.getItem() != null) {
 			try {
-
 				if (e.getItem().getItemMeta().getDisplayName().contains("Kits")) {
 					e.setCancelled(true);
 					openSelector(e.getPlayer());
